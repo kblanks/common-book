@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Commonplace Book</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.9.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.9.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.9.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/8.9.1/firebase-firestore.js"></script>
+    <script defer src="/__/firebase/8.9.1/firebase-functions.js"></script>
+    <script defer src="/__/firebase/8.9.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/8.9.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/8.9.1/firebase-analytics.js"></script>
+    <script defer src="/__/firebase/8.9.1/firebase-remote-config.js"></script>
+    <script defer src="/__/firebase/8.9.1/firebase-performance.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <script defer type="text/javascript" src="scripts/firebaseLoadRefresh.js"></script>
+    <script defer type="text/javascript" src="scripts/firebaseSave.js"></script>
+
+    <link rel="stylesheet" href="css/all.css"> <!--load all font awesome styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
+  </head>
+  <body>
+
+    <div> 
+      <h1>This is a BIG header</h1>
+      <h2>This is a medium header</h2>
+      <form id="input-form" autocomplete="off"> 
+        <fieldset><legend>User Data</legend>
+        <div class="input-group">
+          <i class="fas fa-user icon"></i><input id="user" type="text" class="input-user-form" required placeholder="User ID"/><br>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-user-circle"></i><input id="name" type="text" class="input-user-form" required placeholder="Name"/><br>
+        </div>
+        <div class="input-group">
+          <i class="fas fa-envelope icon"></i><input id="email" type="email" class="input-user-form" required placeholder="Email"/><br>
+        </div>
+        <input id="submit-btn" type="button" onclick="submitForm()" value="SUBMIT ME!" />
+        </fieldset>
+      </form>
+    </div>
+    <br>
+    <div id="output-stuff">
+      Empty for now
+    </div>
+  </body>
+</html>
